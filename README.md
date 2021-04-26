@@ -12,15 +12,15 @@ A total of 650 unique iterations of this project were minted by collectors on [A
 
 The ethos of ArtBlocks is *1/1 of X*, as each minted output is limited and unique among the infinite array of possibilities. 
 
-## Printing & Experimentation
+## Hacking & Experimentation
 
-I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation with the Subscapes algorithm amongst the community and collectors. The code here allows users to programmatically run the software, as well as produce new iterations beyond the 650 minted editions.
+I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation with the Subscapes algorithm amongst the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
 
-For example: as the Subscapes code is renderer-agnostic (it can run in browser or Node.js), it could be adapted to different display mediums, galleries, and engines (such as web, e-ink screens, WebGL, mechanical pen plotters, etc).
+For example: as the Subscapes code is renderer-agnostic (it can run in browser or Node.js), it could be adapted to different display mediums, galleries, and engines (web frontends, e-ink screens, WebGL, mechanical pen plotters, 3D printing, etc).
 
 ## CLI Tool
 
-The CLI tool for subscapes allows users to render a specific iteration of Susbcapes from a hash or mint number. These can be output as PNG, JPG, or SVG format with a specific width and height size.
+The CLI tool for subscapes allows users to render a specific iteration of Susbcapes from a hash or ArtBlocks mint number. These can be output as PNG, JPG, or SVG format with a specific width and height size.
 
 Installation with [Node.js and npm](https://nodejs.org/en/download/):
 
@@ -80,11 +80,11 @@ See #335 before and after, for example:
 
 ## Web/Frontend Tools
 
-I also plan on building a small gallery page that allows you to quickly view all 650 mints in real-time, at full resolution. Check back later.
+I plan on building a small gallery page that allows you to quickly view all 650 mints in real-time, at full resolution. Check back later.
 
-## Artist-Signed Archival Prints
+## Archival Limited-Edition Signed Prints
 
-In the next couple weeks I'll be providing options to purchase signed archival-quality inkjet prints from the limited set of 650 mints. Keep an eye on my Twitter or the [#subscapes discord channel](https://discord.com/channels/411959613370400778/833713318107545670) for details.
+I'll be partnering with [ArtxCode](https://www.artxcode.io/) to produce bespoke, archival quality limited-edition signed & framed prints from the minted set of 650. You can see these as 1/1 physical works tied to the digitally owned token, for collectors who plan to archive and exhibit the minted works long-term. Keep an eye on my Twitter or the [#subscapes discord channel](https://discord.com/channels/411959613370400778/833713318107545670) for details.
 
 ## Source Code & License
 
@@ -92,4 +92,4 @@ The code in this repository is Open Source MIT, see [LICENSE.md](http://github.c
 
 The resulting PNG/JPG/SVG files produced from the Subscapes algorithm (such as the images that can be downloaded from ArtBlocks) are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-Neither of these licenses covers the core Subscapes algorithm (which is hosted on the blockchain and not present in this repository). This is currently to help maintain my artistic IP over the project; but I may decide to release this as well at a later point.
+Neither of these licenses covers the code for the Subscapes generative algorithm (which is hosted on the blockchain and not present in this repository). I've chosen not to release this yet code yet, to help maintain my artistic IP over the project. However, I may decide to open source all of the Subscapes code at a later point.
