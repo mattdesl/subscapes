@@ -2,7 +2,9 @@
 
 :wrench: Tooling for the [Subscapes](https://artblocks.io/project/53) generative art project by Matt DesLauriers.
 
-<img src="docs/378.png" width="33%" /><img src="docs/072.png" width="33%" /><img src="docs/075.png" width="33%" /><img src="docs/220.png" width="33%" /><img src="docs/363.png" width="33%" /><img src="docs/103.png" width="33%" />
+<a href="https://artblocks.io/token/53000378" target="_blank"><img src="docs/378.png" width="33%" /></a><a href="https://artblocks.io/token/53000072" target="_blank"><img src="docs/072.png" width="33%" /></a><a href="https://artblocks.io/token/53000075" target="_blank"><img src="docs/075.png" width="33%" /></a><a href="https://artblocks.io/token/53000220" target="_blank"><img src="docs/220.png" width="33%" /></a><a href="https://artblocks.io/token/53000363" target="_blank"><img src="docs/363.png" width="33%" /></a><a href="https://artblocks.io/token/53000103" target="_blank"><img src="docs/103.png" width="33%" /></a>
+
+<sup>*Pictured above: [#378](https://artblocks.io/token/53000378), [#72](https://artblocks.io/token/53000072), [#75](https://artblocks.io/token/53000075), [#220](https://artblocks.io/token/53000220), [#363](https://artblocks.io/token/53000363), [#103](https://artblocks.io/token/53000103)*</sup>
 
 ## About Subscapes
 
@@ -14,7 +16,7 @@ The ethos of ArtBlocks is *1/1 of X*, as each minted output is limited and uniqu
 
 ## Hacking & Experimentation
 
-I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation (for non-commercial purposes) with the Subscapes algorithm, amongst the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
+I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation with the Subscapes algorithm, for non-commercial explorations within the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
 
 For example: since the Subscapes code is renderer-agnostic (it can run in browser or Node.js), it could be adapted to different display mediums, galleries, and engines (web frontends, e-ink screens, WebGL, mechanical pen plotters, 3D printing, etc).
 
@@ -82,7 +84,7 @@ See #335 before and after, for example:
 
 Work in progress.
 
-## Web/Frontend Gallery
+## Web/Frontend Tools
 
 Work in progress.
 
@@ -96,4 +98,4 @@ The code in this repository is Open Source MIT, see [LICENSE.md](http://github.c
 
 The resulting PNG/JPG/SVG files produced from the Subscapes algorithm (such as the images that can be downloaded from ArtBlocks) are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-Neither of these licenses covers the code for the Subscapes generative algorithm (which is hosted on the blockchain and not present in this repository). I've chosen not to release this yet code yet, to help maintain my artistic IP over the project. However, I may decide to open source all of the Subscapes code at a later point.
+Neither of these licenses covers the code for the Subscapes generative algorithm (which is hosted on the blockchain and not present in this repository). I've chosen not to release this yet code yet, to help maintain my artistic IP over the project and ensure that no third-parties can claim distribution rights over newly tokenized iterations. However, I may decide to publish all of the Subscapes code at a later point, granting a non-commercial license for educational use.
