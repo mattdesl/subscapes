@@ -14,9 +14,9 @@ The ethos of ArtBlocks is *1/1 of X*, as each minted output is limited and uniqu
 
 ## Hacking & Experimentation
 
-I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation with the Subscapes algorithm amongst the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
+I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation (for non-commercial purposes) with the Subscapes algorithm, amongst the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
 
-For example: as the Subscapes code is renderer-agnostic (it can run in browser or Node.js), it could be adapted to different display mediums, galleries, and engines (web frontends, e-ink screens, WebGL, mechanical pen plotters, 3D printing, etc).
+For example: since the Subscapes code is renderer-agnostic (it can run in browser or Node.js), it could be adapted to different display mediums, galleries, and engines (web frontends, e-ink screens, WebGL, mechanical pen plotters, 3D printing, etc).
 
 ## CLI Tool
 
@@ -88,7 +88,7 @@ Work in progress.
 
 ## Archival Limited-Edition Signed Prints
 
-I'll be partnering with [ArtxCode](https://www.artxcode.io/) to produce bespoke, archival quality limited-edition signed & framed prints from the minted set of 650. You can see these as 1/1 physical works tied to the digitally owned token, for collectors who plan to archive and exhibit the minted works long-term. Keep an eye on my Twitter or the [#subscapes discord channel](https://discord.com/channels/411959613370400778/833713318107545670) for details.
+I am still considering how best to approach bespoke, archival, and signed prints of Subscapes. This may be suitable for collectors who plan to archive and display/exhibit the minted works long-term, and wish to own an artist-certified physical artefact. Keep an eye on my Twitter or the [#subscapes discord channel](https://discord.com/channels/411959613370400778/833713318107545670) for details.
 
 ## Source Code & License
 
