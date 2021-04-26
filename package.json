@@ -1,6 +1,6 @@
 {
   "name": "subscapes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "test": "node -r esm tools/cli.js"
   },
   "bin": {
-    "subscapes": "./tools/cli-es5.js"
+    "subscapes": "tools/cli-es5.js"
   },
   "keywords": [],
   "repository": {
@@ -34,6 +34,5 @@
   "bugs": {
     "url": "https://github.com/mattdesl/subscapes/issues"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
