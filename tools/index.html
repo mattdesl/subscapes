@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>subscapes</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.22/dist/web3.min.js"></script>
+  <script type='module'>
+    import { fetch, generate, getRandomHash } from './core.js';
+
+    const INFURA_PROJECT_ID = "569220dd1f86497882844120d441afa9";
+
+    const web3 = new Web3(
+      new Web3.providers.HttpProvider(
+        `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`
+      )
+    );
+
+    (async () => {
+      const src = await fetch(web3);
+      const hash = '0x884ad01c2b5eebf577270061f0b1256178f5dc022dda83e94b40d2baa63211c5' || getRandomHash();
+      generate(src, hash)
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+for i in {53000000..53000649}; do curl -s "https://api.artblocks.io/generator/"$i | egrep -o '\{\"hash.*?\}'; done
