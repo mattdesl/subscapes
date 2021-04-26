@@ -78,9 +78,13 @@ See #335 before and after, for example:
 
 <img src="docs/335-r42.png" width="33%" /> <img src="docs/335-r100.png" width="33%" />
 
-## Web/Frontend Tools
+## Programmatic API (Node.js/JavaScript)
 
-I plan on building a small gallery page that allows you to quickly view all 650 mints in real-time, at full resolution. Check back later.
+Work in progress.
+
+## Web/Frontend Gallery
+
+Work in progress.
 
 ## Archival Limited-Edition Signed Prints
 
