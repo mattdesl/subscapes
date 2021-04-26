@@ -8,7 +8,7 @@
 
 Subscapes is a generative art project where the core rendering code is immutably secured & hosted on the Ethereum mainnet blockchain. The program accepts a unique *hash* as a seed, and outputs the corresponding artwork using a determinstic generative algorithm.
 
-A total of 650 unique iterations of this project were minted by collectors on [ArtBlocks.io](https://artblocks.io/), and will continue to be available for re-sale in the secondary market on [OpenSea](https://opensea.io/assets/art-blocks?search[stringTraits][0][name]=Subscapes&search[stringTraits][0][values][0]=All%20Subscapes). These 650 editions make up the entire collection available for tokenized ownership, and no more editions will be minted or sold in the future.
+A total of 650 unique iterations of this project were minted by collectors on [ArtBlocks.io](https://artblocks.io/), and will continue to be available for re-sale in the secondary market on [OpenSea](https://opensea.io/assets/art-blocks?search[resultModel]=ASSETS&search[stringTraits][0][name]=Subscapes&search[stringTraits][0][values][0]=All%20Subscapes). These 650 editions make up the entire collection available for tokenized ownership, and no more editions will be minted or sold in the future.
 
 The ethos of ArtBlocks is *1/1 of X*, as each minted output is limited and unique among the infinite array of possibilities. 
 
