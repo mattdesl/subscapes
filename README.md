@@ -16,7 +16,7 @@ The ethos of ArtBlocks is *1/1 of X*, as each minted output is limited and uniqu
 
 ## Hacking & Experimentation
 
-I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation with the Subscapes algorithm, for non-commercial explorations within the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
+I'm releasing some of the code & tools here to encourage printing, hacking, and experimentation with the Subscapes program, for non-commercial explorations within the community and collectors. The code here allows users to programmatically run the software to generate high resolution outputs, as well as render new iterations beyond the 650 ArtBlocks-minted editions.
 
 For example: since the Subscapes code is renderer-agnostic (it can run in browser or Node.js), it could be adapted to different display mediums, galleries, and engines (web frontends, e-ink screens, WebGL, mechanical pen plotters, 3D printing, etc).
 
