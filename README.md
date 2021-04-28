@@ -94,7 +94,7 @@ I am still considering how best to approach bespoke, archival, and signed prints
 
 ## Source Code & License
 
-The code in this repository is Open Source MIT, see [LICENSE.md](http://github.com/mattdesl/subscapes/blob/master/LICENSE.md) for details.
+The code in this repository is Open Source MIT, see [LICENSE.md](http://github.com/mattdesl/subscapes/blob/master/LICENSE.md) for details. This includes a small set of generic math/vector/color/etc utilities used by the Subscapes algorithm in [src/](./src).
 
 The resulting PNG/JPG/SVG files produced from the Subscapes algorithm (such as the images that can be downloaded from ArtBlocks) are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
