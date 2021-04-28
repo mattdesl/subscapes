@@ -17,3 +17,17 @@ rollup --format=iife --file=dist/index.js src/main.js
 Minification was done by combining `babel-minify` with `terser` on the bundled JavaScript, see here:
 
 https://gist.github.com/mattdesl/38058dafb94d6518fc18e76e414ca5ef
+
+## testing
+
+You can do a simple test of these utilities by git cloning this `subscapes` repo, and from within that cloned folder, installing dependencies:
+
+```sh
+npm install
+```
+
+Then:
+
+```sh
+node -r esm src/test.js
+```
