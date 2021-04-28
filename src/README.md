@@ -2,7 +2,7 @@
 
 The un-minified source code for Subscapes is not currently published, to maintain artistic IP, until a suitable license can be sorted out.
 
-However, I've published here a few of the un-minified utility modules used within the Subscapes module, to help others build similar compact & on-chain JavaScript artworks.
+However, I've published here a few of the un-minified utility modules used within the Subscapes algorithm, to help others build similar compact & on-chain JavaScript artworks.
 
 ## bundling
 
