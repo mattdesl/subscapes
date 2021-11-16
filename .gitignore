@@ -4,3 +4,5 @@ node_modules
 .DS_Store
 bundle.js
 outputs/
+tmp/
+tools/print.js

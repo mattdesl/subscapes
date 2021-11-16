@@ -38,6 +38,7 @@ async function run(argv = {}) {
     name,
     width,
     height,
+    margin = 0,
     resolution,
     id,
   } = argv;
@@ -57,6 +58,14 @@ async function run(argv = {}) {
     else height = width;
   }
 
+  let canvasWidth = width;
+  let canvasHeight = height;
+  if (margin) {
+    margin = parseFloat(margin);
+    canvasWidth += margin * 2;
+    canvasHeight += margin * 2;
+  }
+
   if (!format) format = "png";
   format = format.toLowerCase();
   const formats = ["png", "jpg", "svg"];
@@ -71,8 +80,9 @@ async function run(argv = {}) {
   }[format];
 
   const ext = `.${format}`;
-
   if (!name) name = `${hash}${ext}`;
+  else if (!path.extname(name)) name = `${name}${ext}`;
+
   const outFile = path.resolve(dir, name);
   await mkdirp(path.dirname(outFile));
 
@@ -112,12 +122,17 @@ async function run(argv = {}) {
 
   let buf;
   if (format === "svg") {
-    buf = serialize(subscapes, { width, height });
+    buf = serialize(subscapes, { width, height, margin });
   } else {
     const { createCanvas } = require("canvas");
-    const canvas = createCanvas(width, height);
+    const canvas = createCanvas(canvasWidth, canvasHeight);
     const context = canvas.getContext("2d");
+    context.save();
+    context.fillStyle = "white";
+    context.fillRect(0, 0, canvasWidth, canvasHeight);
+    context.translate(margin, margin);
     render(subscapes, { context, width, height });
+    context.restore();
     buf = canvas.toBuffer(mimeType);
   }
 
@@ -158,6 +173,7 @@ const argv = minimist(process.argv.slice(2), {
     dir: "d",
     name: "n",
     format: "f",
+    margin: "m",
     resolution: "r",
   },
 });

@@ -9,4 +9,6 @@ demo/
 .npmignore
 LICENSE.md
 outputs
+tools/print.js
 docs/
+tmp/

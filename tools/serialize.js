@@ -2,7 +2,7 @@
 import { fitter, toScreenPoint } from "./render";
 
 export default function serialize(subscapes, opts = {}) {
-  const { width = 512, height = 512 } = opts;
+  let { width = 512, height = 512, margin = 0 } = opts;
 
   let [
     background,
@@ -28,8 +28,12 @@ export default function serialize(subscapes, opts = {}) {
 
   const { lineJoin = "round", lineCap = "round" } = opts;
 
-  const viewWidth = width;
-  const viewHeight = height;
+  // width += margin * 2;
+  // height += margin * 2;
+
+  const outerWidth = margin * 2 + width;
+  const outerHeight = margin * 2 + height;
+
   const units = "px";
 
   const corePaths = [];
@@ -46,9 +50,12 @@ export default function serialize(subscapes, opts = {}) {
 
   const elements = [
     // background
+    margin
+      ? `<rect x="0" y="0" width="${outerWidth}" height="${outerHeight}" fill="white" />`
+      : "",
     `<rect x="0" y="0" width="${width}" height="${height}" fill="${background}" />`,
     // main lines
-    `<g class="${mode}">
+    `<g class="${mode}" transform="">
     ${draw(projectedPaths)}
           </g>`,
     // base polygon to fill out background
@@ -62,6 +69,7 @@ export default function serialize(subscapes, opts = {}) {
     ${draw(projectedBasePaths)}
           </g>`,
   ]
+    .filter(Boolean)
     .map((s) => `      ${s}`)
     .join("\n");
 
@@ -74,13 +82,15 @@ ${elements}
   return `<?xml version="1.0" standalone="no"?>
   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-  <svg width="${width}${units}" height="${height}${units}"
-      xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 ${viewWidth} ${viewHeight}">
+  <svg width="${outerWidth}${units}" height="${outerHeight}${units}"
+      xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 ${outerWidth} ${outerHeight}">
   <style>
     .multiply path { mix-blend-mode: multiply; }
     .screen path { mix-blend-mode: screen; }
   </style>
-  ${graphics}
+  <g transform="translate(${margin} ${margin})">
+    ${graphics}
+  </g>
   </svg>`;
 
   function draw(curPaths) {
